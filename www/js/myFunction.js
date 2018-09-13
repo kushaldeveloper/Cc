@@ -2,8 +2,8 @@
 		//window.addEventListener("batterylow", onBatteryLow, false);
 		//window.addEventListener("batterycritical", onBatteryCritical, false);
 		document.addEventListener("deviceready", onDeviceReady,false);
-		document.getElementById("cameraTakePicture").addEventListener 
-		("click", cameraTakePicture); 
+		document.addEventListener("cameraTakePicture",cameraTakePicture,true);
+		//("click", cameraTakePicture); 
 		function onDeviceReady() {
 		alert("Device is starting");
 		cameraTakePicture();
@@ -11,8 +11,7 @@
 		}
 		function cameraTakePicture() { 
 		alert('camera is starting');
-		alert('camera:' + navigator.camera);
-		alert('camera:' + navigator.camera.getPicture);
+		
 			navigator.camera.getPicture(onSuccess, onFail, { quality: 50,
 				destinationType: Camera.DestinationType.FILE_URI });
 
