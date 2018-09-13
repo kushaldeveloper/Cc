@@ -11,8 +11,8 @@
 		}
 		function cameraTakePicture() { 
 		alert('camera is starting');
-		/*alert('camera:' + navigator.camera);
-		alert('camera:' + navigator.camera.getPicture);*/
+		//alert('camera:' + navigator.camera);
+		alert('camera:' + navigator.camera.getPicture);
 			navigator.camera.getPicture(onSuccess, onFail, { quality: 50,
 				destinationType: Camera.DestinationType.FILE_URI });
 
