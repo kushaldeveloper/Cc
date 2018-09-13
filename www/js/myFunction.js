@@ -2,6 +2,8 @@
 		//window.addEventListener("batterylow", onBatteryLow, false);
 		//window.addEventListener("batterycritical", onBatteryCritical, false);
 		document.addEventListener("deviceready", onDeviceReady,false);
+		document.getElementById("cameraTakePicture").addEventListener 
+		("click", cameraTakePicture); 
 		function onDeviceReady() {
 		alert("Device is starting");
 		cameraTakePicture();
