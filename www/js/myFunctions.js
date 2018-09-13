@@ -2,21 +2,23 @@
 		//window.addEventListener("batterylow", onBatteryLow, false);
 		//window.addEventListener("batterycritical", onBatteryCritical, false);
 		document.addEventListener("deviceready", onDeviceReady,false);
-		document.getElementById("cameraTakePicture").addEventListener 
-		("click", cameraTakePicture); 
+		
 		//("click", cameraTakePicture); 
 		function onDeviceReady() {
+			
 		alert("Device is starting");
+		//document.getElementById("cameraTakePicture").addEventListener 
+		//("click", cameraTakePicture); 
 		cameraTakePicture();
 		//batteryStatus();
 		}
 		function cameraTakePicture() { 
-					alert('camera is starting');
-					alert('camera:' + navigator.camera);
-					alert('camera:' + navigator.camera.getPicture);
-					navigator.camera.getPicture(onSuccess, onFail, {  
-					quality: 50, 
-					destinationType: Camera.DestinationType.DATA_URL 
+		alert('camera is starting');
+		alert('camera:' + navigator.camera);
+		alert('camera:' + navigator.camera.getPicture);
+					   navigator.camera.getPicture(onSuccess, onFail, {  
+						  quality: 50, 
+						  destinationType: Camera.DestinationType.DATA_URL 
 					   });  
 					   
 					   function onSuccess(imageData) { 
@@ -30,6 +32,7 @@
 					   } 
 					
 					}
+		
 		/*function batteryStatus(){
 		function onBatteryStatus(info) { 
 		   alert("BATTERY STATUS:  Level: " + info.level + " isPlugged: " + info.isPlugged); 
