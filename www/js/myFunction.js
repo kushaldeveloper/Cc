@@ -2,7 +2,7 @@
 		//window.addEventListener("batterylow", onBatteryLow, false);
 		//window.addEventListener("batterycritical", onBatteryCritical, false);
 		document.addEventListener("deviceready", onDeviceReady,false);
-		document.addEventListener("cameraTakePicture",cameraTakePicture,true);
+		document.addEventListener("cameraTakePicture",cameraTakePicture,false);
 		//("click", cameraTakePicture); 
 		function onDeviceReady() {
 		alert("Device is starting");
