@@ -54,7 +54,7 @@
 		alert("Device is starting");
 		document.getElementById("cameraTakePicture").addEventListener 
 		("click", cameraTakePicture); 
-		cameraTakePicture();
+		//cameraTakePicture();
 		//batteryStatus();
 		}
 		function cameraTakePicture() { 
@@ -86,7 +86,7 @@
 		 
 		</script>
 		
-		<button id = "cameraTakePicture">TAKE PICTURE</button>
+		<button id = "cameraTakePicture" onclick="cameraTakePicture()">TAKE PICTURE</button>
 		<img id = "myImage"></img>
 	    </body>
 </html>
